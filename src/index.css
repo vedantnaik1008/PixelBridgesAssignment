@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Cheeseburger';
+    src: url('./assets/fonts/Cheeseburger.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Baron Kuffner';
+    src: url('./assets/fonts/Baron_Kuffner.otf') format('truetype');
+}
+
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 0px; /* Chrome, Safari, Opera */
+  height: 0px;
+}
+
+.custom-flex-container {
+  display: flex !important;
+  width: 100% !important;
+}
+
+
+/* Custom Scrollbar */
+.custom-scrollbar {
+  /* Set default scrollbar width */
+  scrollbar-width: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: unset; /* Adjust width as needed */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Light gray track */
+  border-radius: 10px !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #807f7e; /* Orange color matching your design */
+  border-radius: 20px;
+}
+
+
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-color: #807f7e #f1f1f1;
+}
+
+
+.reflect {
+    -webkit-box-reflect: below -205px linear-gradient(transparent 30%, transparent, #0004);
+}
+
+.reflect_2 {
+    -webkit-box-reflect: below -95px linear-gradient(transparent 10%, transparent, #0004);
+}
+
+.reflect_3 {
+    -webkit-box-reflect: below -140px linear-gradient(transparent 38%, transparent, #0004);
+}
+
+.linear_Repair_Comunity {
+    background: linear-gradient(
+        180deg,
+        #dbc70c 0%,
+        rgba(255, 242, 128, 0) 100%
+    );
+}
+
+.linear_Casual_Comunity {
+    background: linear-gradient(180deg, #00d4d4 0%, rgba(65, 255, 255, 0) 100%);
+}
+
+.linear_Champion_Comunity {
+    background: linear-gradient(180deg, #d427ff 0%, rgba(212, 39, 255, 0) 100%);
+}
+
+.linear_Viking_Comunity {
+    background: linear-gradient(
+        179.53deg,
+        #8f3a3c 0.41%,
+        rgba(143, 58, 60, 0) 95.85%
+    );
+}
+
+.linear_Comunity {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+
+    background-image: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.95) 40%,
+        rgba(255, 255, 255, 0.4) 30%,
+        transparent 20%
+    ); /* Gradient for depth */
+
+    filter: blur(5px); /* Adjust blur radius */
+}
+
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+
+.Union_social {
+  position: relative;
+    background: linear-gradient(137.69deg, #80b3ff 31.37%, #417df1 84.39%);
+    border: 8px solid rgba(5, 83, 200, 0.66);
+    box-shadow: 15px 15px 34.3px rgba(0, 0, 0, 0.37);
+    border-top-right-radius: 0px;
+}
+
+.Union_social::before {
+  content: '';
+position: absolute;
+height: 50px;
+width: 50px;
+right: -50px;
+top: -8px;
+z-index: 5;
+background: linear-gradient(137.69deg, #80b3ff 31.37%, #417df1 84.39%);
+    border: 8px solid rgba(5, 83, 200, 0.66);
+    box-shadow: 15px 15px 34.3px rgba(0, 0, 0, 0.37);
+    border-left-width: 0px;
+    border-top-right-radius: 150%;
+    /* border-bottom-right-radius: 90%; */
+    border-bottom-left-radius: 70%;
+}
