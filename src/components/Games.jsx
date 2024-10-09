@@ -7,6 +7,7 @@ import right_arrow from '../assets/right_arrow.svg';
 import alabayGuard from '../assets/Alabay Games/alabay guard prev 2 1.png';
 import alabayHeritage from '../assets/Alabay Games/alabay lost heritage prev 1.png';
 import GamesPreview from './GamesPreview';
+import { Link } from 'react-router-dom';
 
 const settings = {
     dots: false,
@@ -58,16 +59,19 @@ const Games = () => {
                                 alt={`Image ${item.id}`}
                                 className='w-full transition-all duration-300 ease-in-out border-white border-8 rounded-[30px] object-cover'
                             />
-                            <button
+                            <Link
+                                to={`/discover/${item.id}`}
                                 style={{ backgroundColor: `#${item.color}` }}
-                                className={`rounded-[30px] py-3 px-8 font-extrabold font-montserrat text-white absolute z-[10] top-[70%] left-[40%] md:left-[30%] lg:left-[40%] flex gap-6 items-center`}>
-                                <span className='text-lg md:text-xl'>DISCOVER</span>{' '}
+                                className={`rounded-[30px] py-3 px-8 font-extrabold font-montserrat text-white absolute z-[40] top-[70%] left-[40%] md:left-[30%] lg:left-[40%] flex gap-6 items-center`}>
+                                <span className='text-lg md:text-xl'>
+                                    DISCOVER
+                                </span>{' '}
                                 <img
                                     src={arrow}
                                     alt='arrow'
                                     className='w-6 h-6 md:w-7 md:h-7  lg:w-8 lg:h-8'
                                 />
-                            </button>
+                            </Link>
                         </div>
                     ))}
                 </Slider>
@@ -81,7 +85,11 @@ const Games = () => {
                     <button
                         onClick={next}
                         className='absolute right-8 top-1/2 bg-[#353535] px-2 py-4 rounded-xl'>
-                        <img src={right_arrow} alt='' className='w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10' />
+                        <img
+                            src={right_arrow}
+                            alt=''
+                            className='w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10'
+                        />
                     </button>
                 </div>
             </div>
