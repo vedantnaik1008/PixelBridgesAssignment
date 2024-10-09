@@ -5,38 +5,10 @@ import ProjectVision from '../components/ProjectVision';
 import SocialMediaLinks from '../components/SocialMediaLinks';
 import Tokenomics from '../components/Tokenomics';
 import Hero from '../assets/Hero.png';
-import { useEffect, useState } from 'react';
-
+import { motion, useScroll } from 'framer-motion';
+//${!translateY ? 'translate-y-[78%]' : 'translate-y-[0%]'}
 const Layout = () => {
-    const [translateY, setTranslateY] = useState(false);
-    const MAX_SCROLL_HEIGHT = 2; // Adjust this value as needed
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollTop = window.scrollY;
-
-            if (currentScrollTop > 0 && currentScrollTop <= MAX_SCROLL_HEIGHT) {
-                setTranslateY(true);
-            } else {
-                setTranslateY(false);
-            }
-
-            // Prevent scrolling beyond MAX_SCROLL_HEIGHT
-            if (currentScrollTop > MAX_SCROLL_HEIGHT) {
-                window.scrollTo({
-                    top: MAX_SCROLL_HEIGHT,
-                    behavior: 'instant'
-                });
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-    console.log(translateY);
+    const { scrollYProgress } = useScroll();
     return (
         <>
             <img
@@ -46,11 +18,13 @@ const Layout = () => {
             />
 
             <div className='relative '>
-                <main
-                    onScroll={() => setTranslateY(true)}
-                    className={`md:p-6 lg:p-8 transition-all duration-500 ease-in-out ${
-                        !translateY ? 'translate-y-[78%]' : 'translate-y-[0%]'
-                    }`}>
+                <motion.main
+                    initial={{ y: '85%' }}
+                    animate={{
+                        y: scrollYProgress > 0 ? 0 : '85%'
+                    }}
+                    transition={{ duration: 0.8 }}
+                    className={`md:p-6 lg:p-8 transition-all duration-500 ease-in-out h-screen`}>
                     <div className='overflow-y-scroll h-[100dvh] custom-scrollbar rounded-t-[32px] '>
                         <div className=' bg-white'>
                             <Home />
@@ -61,7 +35,7 @@ const Layout = () => {
                             <SocialMediaLinks />
                         </div>
                     </div>
-                </main>
+                </motion.main>
             </div>
         </>
     );

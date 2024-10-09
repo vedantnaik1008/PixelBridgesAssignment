@@ -12,11 +12,13 @@ const Home = () => {
                     alt=''
                     className='bg-no-repeat  h-[105dvh] w-full absolute left-0 top-0 z-[1]'
                 />
-                <img
-                    src={line}
-                    alt='line'
-                    className='absolute   left-1/2 top-5 bg-no-repeat w-[10%] z-[1]'
-                />
+                <div className=' mx-auto w-[90%]'>
+                    <img
+                        src={line}
+                        alt='line'
+                        className='absolute  left-[45%]  top-5 bg-no-repeat w-[10%] z-[1]'
+                    />
+                </div>
 
                 <div
                     className='flex flex-col items-center md:items-baseline 

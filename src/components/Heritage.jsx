@@ -14,6 +14,7 @@ const DiscoverGames = [
 ];
 
 const Heritage = () => {
+
     return (
         <section
             style={{

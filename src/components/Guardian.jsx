@@ -12,6 +12,7 @@ const DiscoverGames = [
 ];
 
 const Guardian = () => {
+   
     return (
         <section
             style={{
