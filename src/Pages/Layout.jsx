@@ -6,9 +6,9 @@ import SocialMediaLinks from '../components/SocialMediaLinks';
 import Tokenomics from '../components/Tokenomics';
 import Hero from '../assets/Hero.png';
 import { motion, useScroll } from 'framer-motion';
-//${!translateY ? 'translate-y-[78%]' : 'translate-y-[0%]'}
 const Layout = () => {
     const { scrollYProgress } = useScroll();
+    
     return (
         <>
             <img

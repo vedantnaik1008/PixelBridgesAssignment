@@ -4,6 +4,7 @@ import abilities from '../assets/Alabay Games/Abilities 2.png';
 import artifacts from '../assets/Alabay Games/artifacts 2.png';
 import guard from '../assets/Alabay Games/image 3 alabay guard 2.png';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const DiscoverGames = [
     { id: 0, image: abilities },
@@ -12,6 +13,7 @@ const DiscoverGames = [
 ];
 
 const Guardian = () => {
+    const [scroll, setScroll] = useState(false);
    
     return (
         <section
@@ -23,7 +25,53 @@ const Guardian = () => {
                 width: '100%'
             }}
             className=''>
-            <div className='mx-auto w-[90%] pt-28 pb-16'>
+            <div
+                className='absolute right-2 top-[30%] '
+                onClick={() => setScroll((prev) => !prev)}>
+                <button
+                    className={` ${
+                        !scroll ? 'bg-[#d9d9d99e]' : 'bg-[#A4A8FF]'
+                    }  p-1 rounded-[3px] w-6 h-6`}>
+                    <svg
+                        width='16'
+                        height='13'
+                        viewBox='0 0 16 13'
+                        fill='none'
+                        xmlns='http://www.w3.org/2000/svg'>
+                        <path
+                            d='M7.13398 0.499999C7.51888 -0.166668 8.48112 -0.166667 8.86602 0.5L14.9282 11C15.3131 11.6667 14.832 12.5 14.0622 12.5H1.93782C1.16802 12.5 0.686897 11.6667 1.0718 11L7.13398 0.499999Z'
+                            fill={`${!scroll ? 'white' : '#353535'}`}
+                        />
+                    </svg>
+                </button>
+                <div className='bg-[#d9d9d99e] w-6 h-[35dvh] my-2 rounded-full'>
+                    <div
+                        className={`h-[17.5dvh] w-6  bg-[#A4A8FF] rounded-full ${
+                            !scroll ? 'translate-y-0' : 'translate-y-full'
+                        }`}
+                    />
+                </div>
+                <button
+                    className={`${
+                        !scroll ? 'bg-[#A4A8FF]' : 'bg-[#d9d9d99e]'
+                    }  p-1 rounded-[3px]  w-6 h-6`}>
+                    <svg
+                        className='rotate-180'
+                        width='16'
+                        height='13'
+                        viewBox='0 0 16 13'
+                        fill='none'
+                        xmlns='http://www.w3.org/2000/svg'>
+                        <path
+                            d='M7.13398 0.499999C7.51888 -0.166668 8.48112 -0.166667 8.86602 0.5L14.9282 11C15.3131 11.6667 14.832 12.5 14.0622 12.5H1.93782C1.16802 12.5 0.686897 11.6667 1.0718 11L7.13398 0.499999Z'
+                            fill={`${!scroll ? '#353535' : 'white'}`}
+                        />
+                    </svg>
+                </button>
+            </div>
+            <div
+                className='mx-auto w-[90%] pt-28 pb-16'
+                onClick={() => setScroll((prev) => !prev)}>
                 <h2 className='text-5xl font-bold text-white max-w-[600px]'>
                     ALABAY GUARDIAN{' '}
                     <span className='text-3xl text-[#A4A8FF]'>
@@ -31,8 +79,8 @@ const Guardian = () => {
                     </span>
                 </h2>
 
-                <div className=''>
-                    <p className='font-montserrat font-bold text-white mt-10 max-w-[410px]'>
+                <div className={`${!scroll ? 'block' : 'hidden'}`}>
+                    <p className='font-montserrat font-bold text-white mt-10 max-w-[250px] md:max-w-[410px]'>
                         Take on the role of the legendary Alabay on a quest to
                         uncover the ancient secrets of its ancestors.
                     </p>
@@ -65,7 +113,7 @@ const Guardian = () => {
                     </div>
                 </div>
 
-                <div className='mt-16 '>
+                <div className={`mt-16 ${scroll ? 'block' : 'hidden'}`}>
                     <h3 className='text-[#A4A8FF] text-2xl font-bold font-montserrat'>
                         FEATURES
                     </h3>
