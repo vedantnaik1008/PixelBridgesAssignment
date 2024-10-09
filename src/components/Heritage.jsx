@@ -125,7 +125,7 @@ const Heritage = () => {
                                 alt=''
                                 className='bg-[#201E26] rounded-full p-2'
                             />
-                            <p className='font-bold pl-4'>PLAY</p>
+                            <p className='font-bold pl-0 xss:pl-4'>PLAY</p>
                         </button>
                         <Link
                             to={'/'}
