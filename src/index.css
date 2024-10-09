@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 /* Custom Scrollbar */
 .custom-scrollbar {
   /* Set default scrollbar width */
-  scrollbar-width: thin;
+  scrollbar-width: none;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
