@@ -48,7 +48,7 @@ const Layout = () => {
             <div className='relative '>
                 <main
                     onScroll={() => setTranslateY(true)}
-                    className={`p-8 transition-all duration-500 ease-in-out ${
+                    className={`md:p-6 lg:p-8 transition-all duration-500 ease-in-out ${
                         !translateY ? 'translate-y-[78%]' : 'translate-y-[0%]'
                     }`}>
                     <div className='overflow-y-scroll h-[100dvh] custom-scrollbar rounded-t-[32px] '>

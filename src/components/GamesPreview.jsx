@@ -56,11 +56,11 @@ const GamesPreview = () => {
     };
     return (
         <div className='mt-20 relative'>
-            <h3 className='text-[#353535] font-montserrat font-extrabold text-4xl'>
+            <h3 className='text-[#353535] font-montserrat font-extrabold text-4xl text-center md:text-start'>
                 <span className='text-[#FFA800]'>GAME</span> PREVIEWS
             </h3>
 
-            <div className='mt-5 overflow-hidden'>
+            <div className='mt-10 md:mt-5 overflow-hidden'>
                 <Slider
                     ref={(slider) => {
                         sliderRef = slider;
@@ -73,7 +73,7 @@ const GamesPreview = () => {
                             <img
                                 src={item.image}
                                 alt={`Image ${item.id}`}
-                                className='w-[90%]  rounded-2xl  object-cover'
+                                className='w-[65%] md:w-[90%] mx-auto  rounded-2xl  object-cover'
                             />
                         </div>
                     ))}
@@ -88,7 +88,7 @@ const GamesPreview = () => {
                 <button
                 disabled={DiscoverGames.length <= 3}
                     onClick={next}
-                    className='absolute -right-[2%] top-1/2 bg-[#353535] px-2 py-4 rounded-xl'>
+                    className='absolute -right-[5%] top-1/2 bg-[#353535] px-2 py-4 rounded-xl'>
                     <img src={right_arrow} alt='' className='w-10 h-10' />
                 </button>
             </div>

@@ -10,12 +10,12 @@ const Tokenomics = () => {
                 className='absolute h-[110%]  w-full -top-[5%]  left-0 z-[1]'
             />
             <div className=' mx-auto w-[90%] py-20 overflow-hidden relative z-10'>
-                <h2 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white mt-16'>
+                <h2 className='break-words text-center md:text-start text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white mt-16'>
                     TOKENOMICS
                 </h2>
-                <div className='mt-5 flex justify-between'>
-                    <div className='flex flex-col gap-8 w-[40%] font-montserrat justify-center'>
-                        <div className='bg-[#353535] py-2.5 px-8 shadow-md shadow-[#353535] rounded-2xl   w-full xl:w-[65%]'>
+                <div className='mt-10 md:mt-5 flex flex-col justify-center gap-8 md:gap-0 md:flex-row md:justify-between'>
+                    <div className='flex flex-col gap-8 w-full md:w-[40%] font-montserrat justify-center'>
+                        <div className='bg-[#353535] py-2.5 px-8 shadow-md shadow-[#353535] rounded-2xl   w-full xl:w-[65%] text-center md:text-start'>
                             <span className='text-white font-extrabold text-lg md:text-lg lg:text-xl'>
                                 LIQUIDITY
                             </span>
@@ -24,7 +24,7 @@ const Tokenomics = () => {
                             </p>
                         </div>
 
-                        <div className='bg-[#353535] py-2.5 px-8 shadow-md shadow-[#353535] rounded-2xl   w-full xl:w-[65%]'>
+                        <div className='bg-[#353535] py-2.5 px-8 shadow-md shadow-[#353535] rounded-2xl   w-full xl:w-[65%] text-center md:text-start'>
                             <span className='text-white font-extrabold text-lg md:text-lg lg:text-xl'>
                                 CONTRACT
                             </span>
@@ -33,7 +33,7 @@ const Tokenomics = () => {
                             </p>
                         </div>
 
-                        <div className='bg-[#353535] py-2.5 px-8 shadow-md shadow-[#353535] rounded-2xl   w-full xl:w-[65%]'>
+                        <div className='bg-[#353535] py-2.5 px-8 shadow-md shadow-[#353535] rounded-2xl   w-full xl:w-[65%] text-center md:text-start'>
                             <span className='text-white font-extrabold text-lg md:text-lg lg:text-xl'>
                                 TAXES
                             </span>

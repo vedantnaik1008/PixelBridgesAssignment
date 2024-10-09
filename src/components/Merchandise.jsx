@@ -58,11 +58,11 @@ const Merchandise = () => {
                 className='absolute w-full h-[48%] top-[28%]  left-0 z-[1]'
             />
             <div className='w-[90%] mx-auto relative z-10'>
-                <h2 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center text-[#FFA800]'>
+                <h2 className='break-words text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center text-[#FFA800]'>
                     MERCHANDISE
                 </h2>
 
-                <div className='mt-20 relative md:w-[90%] lg:w-[80%] xl:w-[70%] mx-auto'>
+                <div className='mt-10 md:mt-20 relative md:w-[90%] lg:w-[80%] xl:w-[70%] mx-auto'>
                     <>
                         {Merchandises.slice(0, 1).map((item) => (
                             <div
@@ -76,7 +76,7 @@ const Merchandise = () => {
                                     height: '100%', // Adjust this value as needed
                                     width: '100%'
                                 }}>
-                                <p className='font-extrabold absolute top-[18%] right-[10%] font-montserrat text-[#353535] text-xl'>
+                                <p className='font-extrabold absolute top-[18%] right-[10%] font-montserrat text-[#353535] text-[9px] md:text-lg lg:text-xl'>
                                     Coming Soon...
                                 </p>
                                 <img
@@ -98,20 +98,20 @@ const Merchandise = () => {
                         <div className=''>
                             <button
                                 onClick={Prev}
-                                className='absolute left-10 top-1/2 bg-white md:p-2 lg:p-3 xl:p-4 rounded-full'>
+                                className='absolute left-2 md:left-10 top-1/2 bg-white p-2 lg:p-3 xl:p-4 rounded-full'>
                                 <img
                                     src={left_arrow}
                                     alt=''
-                                    className='md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8'
+                                    className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8'
                                 />
                             </button>
                             <button
                                 onClick={Next}
-                                className='absolute right-10 top-1/2 bg-white md:p-2 lg:p-3 xl:p-4 rounded-full'>
+                                className='absolute right-2 md:right-10 top-1/2 bg-white p-2 lg:p-3 xl:p-4 rounded-full'>
                                 <img
                                     src={right_arrow}
                                     alt=''
-                                    className='md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8'
+                                    className='w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8'
                                 />
                             </button>
                         </div>

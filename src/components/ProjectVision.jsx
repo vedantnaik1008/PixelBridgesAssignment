@@ -4,7 +4,7 @@ import SingleDogMap from '../assets/ROADMAp.png';
 
 const ProjectVision = () => {
   return (
-      <section className='pt-28 relative'>
+      <section className='pt-40 md:pt-28 relative'>
           <img
               src={rectangle}
               alt=''
@@ -14,9 +14,9 @@ const ProjectVision = () => {
               <h2 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center text-[#FFA800]'>
                   PROJECT VISION
               </h2>
-              <div className=''>
+              <div className='mt-10 md:mt-0'>
                   <img src={groupOfDogs} alt='' className='reflect_2' />
-                  <p className='mt-28 mx-auto text-[#353535] text-center max-w-[1200px] md:text-2xl lg:text-3xl xl:text-4xl font-bold font-kumbh'>
+                  <p className='mt-10 md:mt-28 mx-auto text-[#353535] text-center max-w-[1200px] md:text-2xl lg:text-3xl xl:text-4xl font-bold font-kumbh'>
                       Our mission is to honor the heritage of the Alabay by
                       creating a vibrant, loyal, and powerful community. Just as
                       the Alabay protects its flock, we aim to build a pack that
@@ -24,12 +24,12 @@ const ProjectVision = () => {
                   </p>
               </div>
               <div className='mt-32'>
-                  <h2 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white'>
+                  <h2 className='text-center md:text-start text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white'>
                       ROAD MAP
                   </h2>
-                  <div className='flex justify-between'>
+                  <div className='flex flex-col items-center gap-8 md:gap-0 md:flex-row md:justify-between md:items-start'>
                       <div className='self-center'>
-                          <p className='text-[#353535] text-xl md:text-2xl  lg:text-3xl  font-bold font-kumbh max-w-[500px] mt-40'>
+                          <p className='text-[#353535] text-xl md:text-2xl  lg:text-3xl  font-bold font-kumbh max-w-[500px] mt-10 md:mt-40'>
                               Our journey is just beginning. Explore our roadmap
                               to see the exciting milestones and future plans we
                               have in store.
@@ -41,7 +41,7 @@ const ProjectVision = () => {
                       <img
                           src={SingleDogMap}
                           alt=''
-                          className='w-[50%] reflect_2'
+                          className=' md:w-[50%] reflect_2'
                       />
                   </div>
               </div>

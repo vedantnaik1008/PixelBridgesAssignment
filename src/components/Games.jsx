@@ -57,19 +57,19 @@ const Games = () => {
                             <img
                                 src={item.image}
                                 alt={`Image ${item.id}`}
-                                className='w-full transition-all duration-300 ease-in-out border-white border-8 rounded-[30px] object-cover'
+                                className='w-full transition-all duration-300 ease-in-out border-white border-4 md:border-8 rounded-[30px] object-cover'
                             />
                             <Link
                                 to={`/discover/${item.id}`}
                                 style={{ backgroundColor: `#${item.color}` }}
-                                className={`rounded-[30px] py-3 px-8 font-extrabold font-montserrat text-white absolute z-[40] top-[70%] left-[40%] md:left-[30%] lg:left-[40%] flex gap-6 items-center`}>
-                                <span className='text-lg md:text-xl'>
+                                className={`rounded-[30px] py-1 px-4 md:py-3 md:px-8 font-extrabold font-montserrat text-white absolute z-[40] top-[70%] mx-auto  left-[50%] -translate-x-1/2 -translate-y-1/2   flex gap-3 md:gap-6 items-center`}>
+                                <span className='text-sm md:text-xl'>
                                     DISCOVER
                                 </span>{' '}
                                 <img
                                     src={arrow}
                                     alt='arrow'
-                                    className='w-6 h-6 md:w-7 md:h-7  lg:w-8 lg:h-8'
+                                    className='w-4 h-4 md:w-7 md:h-7  lg:w-8 lg:h-8'
                                 />
                             </Link>
                         </div>
@@ -84,11 +84,11 @@ const Games = () => {
                     </button> */}
                     <button
                         onClick={next}
-                        className='absolute right-8 top-1/2 bg-[#353535] px-2 py-4 rounded-xl'>
+                        className='absolute  right-2 top-1/2  md:right-8 md:top-1/2 bg-[#353535] py-2 px-2 md:py-4 rounded-xl'>
                         <img
                             src={right_arrow}
                             alt=''
-                            className='w-8 h-8 md:w-9 md:h-9 lg:w-10 lg:h-10'
+                            className='w-5 h-5 md:w-9 md:h-9 lg:w-10 lg:h-10'
                         />
                     </button>
                 </div>

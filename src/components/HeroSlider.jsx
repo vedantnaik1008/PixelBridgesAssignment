@@ -44,11 +44,11 @@ const settings = {
         {
             breakpoint: 768,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 1,
+                slidesToScroll: 1,
                 dots: false
             }
-        }
+        },
     ]
 };
 
@@ -65,7 +65,7 @@ const HeroSlider = () => {
     };
 
     return (
-        <div className='mt-32 md:w-[80%] lg:w-[90%] xl:w-[90%] mx-auto relative'>
+        <div className='mt-32 w-[90%] md:w-[80%] lg:w-[90%] xl:w-[90%] mx-auto relative'>
             <div className='flex justify-center gap-8'>
                 <button
                     className={`cursor-pointer text-xl   relative font-montserrat font-extrabold z-20 ${
@@ -138,12 +138,12 @@ const HeroSlider = () => {
             <div className=''>
                 <button
                     onClick={previous}
-                    className='absolute left-0 md:-left-16 lg:left-10 xl:left-0 top-1/2 bg-[#353535] p-2 rounded-xl'>
+                    className='absolute top-[105%] left-20 z-10 md:-left-16 lg:left-10 xl:left-0 md:top-1/2 bg-[#353535] p-2 rounded-xl'>
                     <img src={left_arrow} alt='' className='w-8 h-12' />
                 </button>
                 <button
                     onClick={next}
-                    className='absolute right-0 md:-right-16  lg:right-10 xl:right-0 top-1/2 bg-[#353535] p-2 rounded-xl'>
+                    className='absolute top-[105%] right-20 z-10 md:-right-16  lg:right-10 xl:right-0 md:top-1/2 bg-[#353535] p-2 rounded-xl'>
                     <img src={right_arrow} alt='' className='w-8 h-12' />
                 </button>
             </div>

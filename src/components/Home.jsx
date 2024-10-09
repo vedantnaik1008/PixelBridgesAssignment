@@ -1,6 +1,6 @@
 import Hero_Dog from '../assets/Shepherd dog.png';
-import rectangle2 from '../assets/Rectangle_2.png'
-import line from '../assets/Line 3.png'
+import rectangle2 from '../assets/Rectangle_2.png';
+import line from '../assets/Line 3.png';
 import HeroSlider from './HeroSlider';
 
 const Home = () => {
@@ -18,22 +18,24 @@ const Home = () => {
                     className='absolute   left-1/2 top-5 bg-no-repeat w-[10%] z-[1]'
                 />
 
-                <div className='flex gap-8 w-[90%] mx-auto  z-10 relative'>
-                    <div className='w-[56%] relative'>
+                <div
+                    className='flex flex-col items-center md:items-baseline 
+                 xl:items-stretch md:flex-row gap-8 w-[90%] mx-auto  z-10 relative'>
+                    <div className='mt-5 md:mt-0 md:w-[56%] relative'>
                         <img
                             src={Hero_Dog}
                             alt='Hero dog'
-                            className='w-full absolute top-[11%] reflect'
+                            className='w-full md:absolute md:top-[11%] xl:top-[13%] reflect'
                         />
                     </div>
-                    <div className='w-[40%] flex flex-col h-[90dvh] justify-center  gap-3 '>
-                        <p className='text-[#F76902] md:text-4xl lg:text-5xl xl:text-6xl text-right font-montserrat font-extrabold'>
+                    <div className='md:w-[40%] flex flex-col md:h-[90dvh] justify-center  gap-3 '>
+                        <p className='text-[#F76902] text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center md:text-right font-montserrat font-extrabold'>
                             History Of
                         </p>
-                        <h1 className='text-white md:text-6xl lg:text-7xl xl:text-[83px] font-montserrat font-extrabold text-right'>
+                        <h1 className='text-white text-5xl md:text-6xl lg:text-7xl xl:text-[83px] font-montserrat font-extrabold text-center md:text-right'>
                             ALABAY
                         </h1>
-                        <p className='ml-auto max-w-[420px] text-[#353535] md:text-lg lg:text-xl xl:text-2xl  font-bold font-kumbh text-right'>
+                        <p className='ml-auto max-w-[420px] text-[#353535] md:text-lg lg:text-xl xl:text-2xl  font-bold font-kumbh text-center md:text-right'>
                             The Central Asian Shepherd Dog, also known as
                             Alabay, has been a guardian of livestock and
                             property for centuries. Originating from Central

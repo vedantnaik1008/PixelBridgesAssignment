@@ -134,3 +134,27 @@ background: linear-gradient(137.69deg, #80b3ff 31.37%, #417df1 84.39%);
     /* border-bottom-right-radius: 90%; */
     border-bottom-left-radius: 70%;
 }
+
+ .aligns{
+  align-items: unset;
+ }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .Union_social {
+  position: relative;
+    background: linear-gradient(137.69deg, #80b3ff 31.37%, #417df1 84.39%);
+    border: 8px solid rgba(5, 83, 200, 0.66);
+    box-shadow: 15px 15px 34.3px rgba(0, 0, 0, 0.37);
+    border-top-right-radius: 24px;
+}
+
+.Union_social::before {
+  display: none;
+}
+}
+
+
+
+
+
+ 
