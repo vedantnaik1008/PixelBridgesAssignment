@@ -74,7 +74,7 @@ const Heritage = () => {
             <div
                 className='mx-auto w-[90%] pt-28 pb-16'
                 onClick={() => setScroll((prev) => !prev)}>
-                <h2 className='text-5xl font-bold text-white max-w-[480px]'>
+                <h2 className='sigmar-regular text-5xl font-bold text-white max-w-[480px]'>
                     ALABAY HERITAGE{' '}
                     <span className='text-3xl text-[#90FFAE]'>
                         THE LOST ADVENTURE

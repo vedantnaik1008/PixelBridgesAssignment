@@ -72,7 +72,7 @@ const Guardian = () => {
             <div
                 className='mx-auto w-[90%] pt-28 pb-16'
                 onClick={() => setScroll((prev) => !prev)}>
-                <h2 className='text-5xl font-bold text-white max-w-[600px]'>
+                <h2 className='sigmar-regular text-5xl font-bold text-white max-w-[600px]'>
                     ALABAY GUARDIAN{' '}
                     <span className='text-3xl text-[#A4A8FF]'>
                         SHEPHERD OF THE STEPPES

@@ -37,7 +37,7 @@ const Games = () => {
     return (
         <div className='mt-40'>
             <div className='flex flex-col items-center'>
-                <h2 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white'>
+                <h2 className='sigmar-regular text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white'>
                     GAMES
                 </h2>
                 <p className='md:text-2xl lg:text-3xl xl:text-4xl font-extrabold font-montserrat text-[#353535] mt-4'>

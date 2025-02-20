@@ -11,7 +11,7 @@ const ProjectVision = () => {
               className='absolute  h-[65%] w-full top-[20%]  left-0 z-[1]'
           />
           <div className='w-[90%] mx-auto relative z-10'>
-              <h2 className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center text-[#FFA800]'>
+              <h2 className='sigmar-regular text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center text-[#FFA800]'>
                   PROJECT VISION
               </h2>
               <div className='mt-10 md:mt-0'>
@@ -24,7 +24,7 @@ const ProjectVision = () => {
                   </p>
               </div>
               <div className='mt-32'>
-                  <h2 className='text-center md:text-start text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white'>
+                  <h2 className='sigmar-regular text-center md:text-start text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white'>
                       ROAD MAP
                   </h2>
                   <div className='flex flex-col items-center gap-8 md:gap-0 md:flex-row md:justify-between md:items-start'>

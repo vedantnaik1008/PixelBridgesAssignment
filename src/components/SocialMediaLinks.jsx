@@ -6,7 +6,7 @@ const SocialMediaLinks = () => {
   return (
       <section className='pt-52 pb-32 relative'>
           <div className='w-[90%] mx-auto '>
-              <h2 className='text-center md:text-start text-5xl md:text-6xl lg:text-7xl xl:text-8xl max-w-[800px] text-[#FFA800]'>
+              <h2 className='sigmar-regular text-center md:text-start text-5xl md:text-6xl lg:text-7xl xl:text-8xl max-w-[800px] text-[#FFA800]'>
                   SOCIAL MEDIA LINKS
               </h2>
               <div className='mt-10 md:mt-5 flex flex-col items-center md:items-center md:flex-row md:justify-between mx-auto w-[95%]'>

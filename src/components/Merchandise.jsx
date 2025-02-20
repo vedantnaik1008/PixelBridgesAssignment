@@ -58,7 +58,7 @@ const Merchandise = () => {
                 className='absolute w-full h-[48%] top-[28%]  left-0 z-[1]'
             />
             <div className='w-[90%] mx-auto relative z-10'>
-                <h2 className='break-words text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center text-[#FFA800]'>
+                <h2 className='sigmar-regular break-words text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center text-[#FFA800]'>
                     MERCHANDISE
                 </h2>
 

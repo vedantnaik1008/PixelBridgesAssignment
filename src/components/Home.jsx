@@ -31,10 +31,10 @@ const Home = () => {
                         />
                     </div>
                     <div className='md:w-[40%] flex flex-col md:h-[90dvh] justify-center  gap-3 '>
-                        <p className='text-[#F76902] text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center md:text-right font-montserrat font-extrabold'>
+                        <p className='text-[#F76902] text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center md:text-right   sigmar-regular'>
                             History Of
                         </p>
-                        <h1 className='text-white text-5xl md:text-6xl lg:text-7xl xl:text-[83px] font-montserrat font-extrabold text-center md:text-right'>
+                        <h1 className='text-white xss:text-[#F76902] md:text-white text-5xl md:text-6xl lg:text-7xl xl:text-[83px] sigmar-regular  text-center md:text-right'>
                             ALABAY
                         </h1>
                         <p className='ml-auto max-w-[420px] text-[#353535] md:text-lg lg:text-xl xl:text-2xl  font-bold font-kumbh text-center md:text-right'>
